@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navi from './layouts/Navi';
 import 'semantic-ui-css/semantic.min.css'
