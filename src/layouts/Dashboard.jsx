@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import { Route } from "react-router-dom";
 import CandidateList from "../pages/CandidateList";
 import JobAdvertisementList from "../pages/JobAdvertisementList";
+import EmployerList from "../pages/EmployerList";
 
 export default function Dashboard() {
   return (
@@ -16,6 +17,7 @@ export default function Dashboard() {
           <Grid.Column width={12}>
             <Route exact path="/" component={JobAdvertisementList} />
             <Route path="/candidates" component={CandidateList} />
+            <Route path="/employers" component={EmployerList} />
           </Grid.Column>
         </Grid.Row>
       </Grid>

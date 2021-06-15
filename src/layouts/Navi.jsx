@@ -7,7 +7,7 @@ export default function Navi() {
     <div>
       <Menu size="small" fixed="top">
       <Container>
-        <Menu.Item name="iş ilanları" />
+        <Menu.Item name="iş ilanları" as={Link} to='/employers'  />
         <Menu.Item name="adaylar" as={Link} to='/candidates' />
         <Menu.Menu position="right">      
           <Menu.Item>
