@@ -1,7 +1,9 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
-import JobAdvertisements from "../pages/JobAdvertisements";
 import Sidebar from "./Sidebar";
+import { Route } from "react-router-dom";
+import CandidateList from "../pages/CandidateList";
+import JobAdvertisementList from "../pages/JobAdvertisementList";
 
 export default function Dashboard() {
   return (
@@ -9,10 +11,11 @@ export default function Dashboard() {
       <Grid>
         <Grid.Row>
           <Grid.Column width={4}>
-              <Sidebar/>
+            <Sidebar />
           </Grid.Column>
           <Grid.Column width={12}>
-              <JobAdvertisements/>
+            <Route exact path="/" component={JobAdvertisementList} />
+            <Route path="/candidates" component={CandidateList} />
           </Grid.Column>
         </Grid.Row>
       </Grid>

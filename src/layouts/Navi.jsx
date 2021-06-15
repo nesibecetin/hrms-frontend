@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import { Button,Container, Dropdown, Menu } from "semantic-ui-react";
 
 export default function Navi() {
@@ -7,7 +8,7 @@ export default function Navi() {
       <Menu size="small" fixed="top">
       <Container>
         <Menu.Item name="iş ilanları" />
-        <Menu.Item name="adaylar" />
+        <Menu.Item name="adaylar" as={Link} to='/candidates' />
         <Menu.Menu position="right">      
           <Menu.Item>
             <Button primary>Giriş Yap</Button>
