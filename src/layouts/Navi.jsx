@@ -1,22 +1,47 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import { Button,Container, Menu } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Button, Container, Menu } from "semantic-ui-react";
+import "../assets/css/navi.css";
 
 export default function Navi() {
   return (
     <div>
-      <Menu size="small" fixed="top">
-      <Container>
-        <Menu.Item name="iş ilanları" as={Link} to='/employers'  />
-        <Menu.Item name="adaylar" as={Link} to='/candidates' />
-        <Menu.Menu position="right">      
-          <Menu.Item>
-            <Button primary>Giriş Yap</Button>
-            <Button primary>Kayıt Ol</Button>
-          </Menu.Item>
-        </Menu.Menu>
-        </Container>
-      </Menu>     
+      <nav class="navbar navbar-expand-lg  ">
+        <a class="navbar-brand" href="#">
+          HRMS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+     
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 }

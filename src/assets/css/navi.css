@@ -1,0 +1,22 @@
+
+
+nav{
+    background-color: white;
+    padding-left:15em ;
+}
+a.navbar-brand{
+    color: #a65dee;
+}
+ul li a.nav-link{
+    color: #cca3f5;
+    padding-right: 5em;
+    font-size: medium;
+    
+}
+
+ul li {
+    padding-right: 3em;
+    padding-left: 3em;
+    border-right: 1px solid #e6d1fa  ;
+}
+
