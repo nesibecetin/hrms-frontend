@@ -44,7 +44,7 @@ export default function CandidateList() {
                   <Card.Content extra>
                   
                     <div className="ui two buttons">
-                      <Button basic color="green">
+                      <Button basic color="blue">
                         Detay Görüntüle
                       </Button>
                       

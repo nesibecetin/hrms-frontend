@@ -3,20 +3,24 @@
 nav{
     background-color: white;
     padding-left:15em ;
+    padding-right:10em ;
 }
 a.navbar-brand{
-    color: #a65dee;
+    color: #6777ef;
 }
 ul li a.nav-link{
-    color: #cca3f5;
+    color: #8c98f3;
     padding-right: 5em;
     font-size: medium;
     
 }
 
 ul li {
-    padding-right: 3em;
-    padding-left: 3em;
-    border-right: 1px solid #e6d1fa  ;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-right: 1px solid #d1d6fa  ;
+}
+button{
+    margin-left: 5em;
 }
 
