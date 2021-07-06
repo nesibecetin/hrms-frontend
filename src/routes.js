@@ -14,6 +14,10 @@ export const routes={
     employers:{
         path:"/employers",
         title:"Employers"
+    },
+    jobPositionAdd:{
+        path:"/admin/ispozisyonuekle",
+        title:"Employers"
     }
 
 }

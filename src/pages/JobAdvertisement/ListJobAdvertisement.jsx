@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Table, Item } from "semantic-ui-react";
-import JobAdvertismentService from "../services/JobAdvertismentService";
-import "../assets/css/jobadvertisiement.css"
+import { Item } from "semantic-ui-react";
+import JobAdvertismentService from "../../services/JobAdvertismentService";
+import "../../assets/css/jobadvertisiement.css"
 
 export default function JobAdvertisementList() {
   const [jobAdvertisements, setjobAdvertisements] = useState([]);
